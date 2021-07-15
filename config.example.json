@@ -1,0 +1,34 @@
+{
+    "prefix": ".",
+    "TOKEN": "",
+
+    "ownerID": "114091125479833609",
+
+    "roles": [
+        
+        {
+            "buttonName": "Role 1",
+            "roleID": "864906678343172116",
+            "uniqueID": "Role1",
+            "Emoji": "",
+            "style": "red"
+        },
+
+        {
+            "buttonName": "Role 2",
+            "roleID": "864906730579951636",
+            "uniqueID": "role2",
+            "Emoji": "",
+            "style": "red"
+        },
+
+        {
+            "buttonName": "Role 3",
+            "roleID": "864906787005399040",
+            "uniqueID": "role3",
+            "Emoji": "",
+            "style": "red"
+        }
+    ]
+
+}

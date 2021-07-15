@@ -1,0 +1,24 @@
+{
+  "name": "role-channel",
+  "version": "1.0.0",
+  "description": "Give people roles using discords new button system",
+  "main": "index.js",
+  "dependencies": {
+    "discord-buttons": "^4.0.0",
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js debug"
+  },
+  "author": "Serabus",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/McCoughskii/Discord-Role-Buttons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/McCoughskii/Discord-Role-Buttons/issues"
+  },
+  "homepage": "https://github.com/McCoughskii/Discord-Role-Buttons#readme"
+}
