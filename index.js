@@ -7,12 +7,12 @@ if (Number(process.version.slice(1).split(".")[0]) < 12) throw new Error("Node 1
 const discord = require("discord.js");
 const client = new discord.Client();
 require("discord-buttons")(client);
-const config = require("config.json");
+const config = require("./config.json");
 const {prefix, buttonStyle, ownerID, roles} = config;
 const { disbut, MessageActionRow, MessageButton } = require("discord-buttons");
 const TOKEN = process.env.TOKEN || config.TOKEN;
 
-client.logger = require("./modules/Logger");
+client.logger = require("./modules/logger.js");
 
 
 client.on("ready", () => {
