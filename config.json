@@ -11,7 +11,7 @@
             "roleID": "864906678343172116",
             "uniqueID": "Role1",
             "Emoji": "", 
-            "style": "red"
+            "style": "blurple"
         },
 
         {
@@ -19,7 +19,7 @@
             "roleID": "864906730579951636",
             "uniqueID": "role2",
             "Emoji": "",
-            "style": "red"
+            "style": "blurple"
         },
 
         {
@@ -27,7 +27,7 @@
             "roleID": "864906787005399040",
             "uniqueID": "role3",
             "Emoji": "",
-            "style": "red"
+            "style": "blurple"
         }
     ]
 

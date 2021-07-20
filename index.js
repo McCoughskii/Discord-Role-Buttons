@@ -1,14 +1,22 @@
 'use strict'
 
+// This will check if the node version you are running is the required
+// Node version, if it isn't it will throw the following error to inform you.
+if (Number(process.version.slice(1).split(".")[0]) < 12) throw new Error("Node 12.0.0 or higher is required. Update Node on your system.");
+
 const discord = require("discord.js");
 const client = new discord.Client();
 require("discord-buttons")(client);
-const {prefix, TOKEN, buttonStyle, ownerID, roles} = require("./config.json")
-
+const config = require("config.json");
+const {prefix, buttonStyle, ownerID, roles} = config;
 const { disbut, MessageActionRow, MessageButton } = require("discord-buttons");
+const TOKEN = process.env.TOKEN || config.TOKEN;
+
+client.logger = require("./modules/Logger");
+
 
 client.on("ready", () => {
-    console.log(`Logged in as ${client.user.tag}!`);
+    client.logger.log(`${client.user.tag}, ready to serve ${client.users.cache.size} users in ${client.guilds.cache.size} servers.`, "ready");
     client.user.setStatus('invisible')
         .catch(console.error);
 
@@ -19,7 +27,7 @@ client.on("message", async (msg) => {
 
     const row = new MessageActionRow()
 
-    if (msg.content.toLowerCase() === "!buttontest"){
+    if (msg.content.toLowerCase() === "!spawnbuttons"){
 
         for (let i = 0; i < roles.length; i++) {
             let button = new MessageButton()

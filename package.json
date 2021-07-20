@@ -4,8 +4,10 @@
   "description": "Give people roles using discords new button system",
   "main": "index.js",
   "dependencies": {
+    "chalk": "^4.1.1",
     "discord-buttons": "^4.0.0",
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "moment": "^2.29.1"
   },
   "devDependencies": {},
   "scripts": {
